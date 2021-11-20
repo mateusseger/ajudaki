@@ -1,18 +1,19 @@
 <template>
   <Header />
-  <Home />
+  <router-view path="$router.key" />
+  <Footer />
 </template>
 
 <script>
 import './styles/global.css'
 import Header from './components/Header'
-import Home from './pages/Home'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Home
+    Footer
   }
 }
 </script>

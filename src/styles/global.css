@@ -1,5 +1,6 @@
 :root {
     --color-pink: #c52dee;
+    --color-purple: #730C8F;
     --color-grey: #616161;
 }
 
@@ -32,6 +33,10 @@ a {
 
 a:hover {
     opacity: 0.8;
+}
+
+p {
+    color: var(--color-grey);
 }
 
 main {

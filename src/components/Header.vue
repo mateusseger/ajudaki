@@ -3,9 +3,9 @@
 
         <nav class="container">
 
-            <a href="/">
+            <router-link to="/">
                 <img src="@/assets/logo.png" alt="ajudaki" id="logo">Ajudaki
-            </a>
+            </router-link>
 
             <div id="search" :class="{active:searchActive}">
                 <input placeholder="Pesquisar">
@@ -15,9 +15,9 @@
 
                 <span v-on:click="openSearch"><i class="fas fa-search fa-lg"></i></span>
 
-                <button class="active">Pedir Ajuda</button>
+                <button class="active" @click="$router.push('RequestHelp')">Pedir Ajuda</button>
 
-                <button>Minha Conta</button>
+                <button @click="$router.push('Login')">Minha Conta</button>
 
             </div>
         </nav>
