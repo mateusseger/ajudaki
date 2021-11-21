@@ -5,7 +5,7 @@
         
             <img src="@/assets/banner.jpeg" alt="banner">
 
-            <h2>Tempos difíceis podem ser superados quando somos solidários com o próximo. Peça ajuda ou ajude algúem.</h2>
+            <h2>Tempos difíceis podem ser superados quando somos solidários com o próximo. Peça ajuda ou ajude alguém.</h2>
             
         </div>
 
@@ -27,9 +27,6 @@
 
         </div>
 
-        
-
-        
     </main>
 </template>
 
@@ -135,11 +132,6 @@ button {
     margin-bottom: 25px;
 }
 
-a {
-    text-decoration: underline;
-    color: var(--color-purple);
-}
-
 .request {
     border: 1px solid var(--color-grey);
     border-radius: 10px;
@@ -164,13 +156,9 @@ a {
     padding: 5px 10px;
 } 
 
-@media (min-width:700px) {
+@media (min-width: 700px) {
     #welcome img {
         width: 550px;
-    }
-
-    button {
-        display: none;
     }
 
     #content {
@@ -200,4 +188,11 @@ a {
     }
 
 }
+
+@media (min-width: 850px) {
+    button {
+        display: none;
+    }
+}
+
 </style>

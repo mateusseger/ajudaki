@@ -29,12 +29,7 @@ footer {
 }
 
 a {
-    text-decoration: underline;
     padding: 15px;
-}
-
-span, a {
-    color: var(--color-purple)
 }
 
 span {

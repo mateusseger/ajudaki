@@ -7,19 +7,14 @@
                 <img src="@/assets/logo.png" alt="ajudaki" id="logo">Ajudaki
             </router-link>
 
-            <div id="search" :class="{active:searchActive}">
-                <input placeholder="Pesquisar">
-            </div>
+            <input id="search" :class="{active:searchActive}" placeholder="Pesquisar">
 
-            <div id="menu-right">
+            <span v-on:click="openSearch"><i class="fas fa-search fa-lg"></i></span>
 
-                <span v-on:click="openSearch"><i class="fas fa-search fa-lg"></i></span>
+            <button class="active button-pink" @click="$router.push('RequestHelp')">Pedir Ajuda</button>
 
-                <button class="active" @click="$router.push('RequestHelp')">Pedir Ajuda</button>
+            <button class="button-white" @click="$router.push('Login')">Minha Conta</button>
 
-                <button @click="$router.push('Login')">Minha Conta</button>
-
-            </div>
         </nav>
 
     </header>
@@ -55,33 +50,24 @@ nav {
     display: flex;
     height: 70px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 nav a {
+    margin-right: auto;
     display: flex;
     align-items: center;
     font-family: 'IBM Plex Sans Bold';
     font-size: 24px;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
 }
 
 #logo {
     width: 40px;
-}
-
-button {
-    border: 1px solid var(--color-grey);
-    border-radius: 7px;
-    background-color: #ffffff;
-    color: var(--color-grey);
-}
-
-button.active {
-    display: none;
-    margin-right: 30px;
-    background-color: var(--color-pink);
-    color: #ffffff;
-    border: 1px solid var(--color-pink);
 }
 
 #search {
@@ -89,22 +75,18 @@ button.active {
     position: absolute;
     top: 75px;
     left: 0;
-}
-
-#search.active {
-    display: flex;
-}
-
-#search input {
     width: 100vw;
     height: 40px;
     padding: 10px;
     border: none;
     border-bottom: 1px solid var(--color-grey);
-    
 }
 
-#search input:focus {
+#search.active {
+    display: inline;
+}
+
+input:focus {
     outline: 0;
 }
 
@@ -119,9 +101,15 @@ button.active {
     opacity: 0.8;
 }
 
+.button-pink {
+    display: none;
+    margin-right: 30px;
+}
+
 @media (min-width:700px) {
-    button.active {
-        display: inline;
+
+    nav a {
+        margin-right: 0;
     }
 
     .fa-search {
@@ -129,20 +117,30 @@ button.active {
     }
 
     #search {
-        display: flex;
+        display: inline;
         position: relative;
         top:0;
-    }
-
-    #search input {
+        margin: auto;
         height: 30px;
-        width: 25vw;
+        max-width: 25vw;
         border: none;
         background-color: #E0E0E0;
         border-radius: 7px;
     }
-    #search input::placeholder {
+    #search::placeholder {
         color: var(--color-grey);
+    }
+
+}
+
+@media (min-width:850px) {
+
+    nav a {
+        margin-right: 95.58px;
+    }
+
+    button.active {
+        display: inline;
     }
     
 }
