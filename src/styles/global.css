@@ -55,6 +55,12 @@ main {
     width: 90%;
 }
 
+input[type='text'], 
+input[type='password'] {
+    padding: 20px 10px;
+    line-height: 28px;
+}
+
 button {
     height: 40px;
     font-weight: 600;
