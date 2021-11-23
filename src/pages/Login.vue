@@ -52,10 +52,10 @@ p {
     align-self: flex-start;
 }
 
-input {
+#login input {
     width: 100%;
     margin: 7px 0 15px 0;
-    height: 30px;
+    height: 56px;
     padding: 10px;
     border-radius: 7px;
     border: 1px solid black;
