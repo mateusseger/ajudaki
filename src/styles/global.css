@@ -1,88 +1,88 @@
 :root {
-    --color-pink: #c52dee;
-    --color-purple: #730C8F;
-    --color-grey: #616161;
+	--color-pink: #c52dee;
+	--color-purple: #730C8F;
+	--color-grey: #616161;
 }
 
 @font-face {
-    font-family: 'IBM Plex Sans';
-    src: url(../assets/IBMPlexSans-Regular.ttf);
+	font-family: 'IBM Plex Sans';
+	src: url(../assets/IBMPlexSans-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'IBM Plex Sans Bold';
-    src: url(../assets/IBMPlexSans-Bold.ttf);
+	font-family: 'IBM Plex Sans Bold';
+	src: url(../assets/IBMPlexSans-Bold.ttf);
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 html, body {
-    font-family: 'IBM Plex Sans';
+	font-family: 'IBM Plex Sans';
 }
 
 a {
-    transition: 0.2s opacity;
-    cursor: pointer;
-    color: var(--color-purple);
+	transition: 0.2s opacity;
+	cursor: pointer;
+	color: var(--color-purple);
 }
 
 a:hover {
-    opacity: 0.8;
+	opacity: 0.8;
 }
 
 p {
-    color: var(--color-grey);
+	color: var(--color-grey);
 }
 
 main {
-    width: 100%;
-    min-height: calc(100vh - 235px);
-    display: flex;
-    flex-direction: column;
+	width: 100%;
+	min-height: calc(100vh - 235px);
+	display: flex;
+	flex-direction: column;
 }
 
 @media (min-width: 700px) {
-    main {
-        min-height: calc(100vh - 135px);
-    }
+	main {
+			min-height: calc(100vh - 135px);
+	}
 }
 
 .container {
-    width: 90%;
+	width: 90%;
 }
 
 input[type='text'], 
 input[type='password'] {
-    padding: 20px 10px;
-    line-height: 28px;
+	padding: 20px 10px;
+	line-height: 28px;
 }
 
 button {
-    height: 40px;
-    font-weight: 600;
-    padding: 10px;
-    border: none;
-    border-radius: 7px;
-    transition: 0.2s opacity;
-    cursor: pointer;
+	height: 40px;
+	font-weight: 600;
+	padding: 10px;
+	border: none;
+	border-radius: 7px;
+	transition: 0.2s opacity;
+	cursor: pointer;
 }
 
 button:hover {
-    opacity: 0.8;
+	opacity: 0.8;
 }
 
 .button-pink {
-    background-color: var(--color-pink);
-    color: #ffffff;
-    border: 1px solid var(--color-pink);
+	background-color: var(--color-pink);
+	color: #ffffff;
+	border: 1px solid var(--color-pink);
 }
 
 .button-white {
-    background-color: #ffffff;
-    color: var(--color-grey);
-    border: 1px solid var(--color-grey);
+	background-color: #ffffff;
+	color: var(--color-grey);
+	border: 1px solid var(--color-grey);
 }
