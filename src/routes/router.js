@@ -8,41 +8,41 @@ import RequestHelp from '@/pages/RequestHelp'
 import Search from '@/pages/Search'
 
 const routes = [
-    {
-        path: '/',
-        name: 'Home',
-        component: Home
-    },
-    {
-        path: '/Login',
-        name: 'Login',
-        component: Login
-    },
-    {
-        path: '/MyAccount',
-        name: 'MyAccount',
-        component: MyAccount
-    },
-    {
-        path: '/OfferHelp',
-        name: 'OfferHelp',
-        component: OfferHelp
-    },
-    {
-        path: '/RequestHelp',
-        name: 'RequestHelp',
-        component: RequestHelp
-    },
-    {
-        path: '/Search',
-        name: 'Search',
-        component: Search
-    }
+	{
+		path: '/',
+		name: 'Home',
+		component: Home
+	},
+	{
+		path: '/Login',
+		name: 'Login',
+		component: Login
+	},
+	{
+		path: '/MyAccount',
+		name: 'MyAccount',
+		component: MyAccount
+	},
+	{
+		path: '/OfferHelp',
+		name: 'OfferHelp',
+		component: OfferHelp
+	},
+	{
+		path: '/RequestHelp',
+		name: 'RequestHelp',
+		component: RequestHelp
+	},
+	{
+		path: '/Search',
+		name: 'Search',
+		component: Search
+	}
 ]
 
 const router = createRouter({
-    routes,
-    history: createWebHistory()
+	routes,
+	history: createWebHistory()
 })
 
 export default router

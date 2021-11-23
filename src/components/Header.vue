@@ -127,7 +127,8 @@ input:focus {
     max-width: 25vw;
     border: none;
     border-radius: 7px;
-    background: #e0e0e0 url('~@/assets/search_black_24dp.svg') no-repeat scroll right 10px center;
+    background: #e0e0e0 url("~@/assets/search_black_24dp.svg") no-repeat scroll
+      right 10px center;
   }
   #search::placeholder {
     color: var(--color-grey);
