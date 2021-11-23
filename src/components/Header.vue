@@ -79,16 +79,14 @@ a {
   position: absolute;
   top: 75px;
   left: 0;
-  width: 100vw;
+  width: calc(100vw - 15px);
+  padding: 5px 0 5px 10px;
   border: none;
   border-bottom: 1px solid var(--color-grey);
-  background: url('~@/assets/search_black_24dp.svg') no-repeat scroll right 10px center;
 }
 
 #search.active {
   display: inline;
-  background: none;
-  background-color: white;
 }
 
 input:focus {
@@ -128,8 +126,8 @@ input:focus {
     height: 30px;
     max-width: 25vw;
     border: none;
-    background-color: #e0e0e0;
     border-radius: 7px;
+    background: #e0e0e0 url('~@/assets/search_black_24dp.svg') no-repeat scroll right 10px center;
   }
   #search::placeholder {
     color: var(--color-grey);
