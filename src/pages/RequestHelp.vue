@@ -1,5 +1,5 @@
 <template>
-  <main>PÁGINA PARA PEDIR AJUDA</main>
+  <main></main>
 </template>
 
 <script>
