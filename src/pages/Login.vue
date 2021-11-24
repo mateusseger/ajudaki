@@ -28,9 +28,6 @@ export default {
 </script>
 
 <style scoped>
-main {
-  align-items: center;
-}
 
 #login {
   display: flex;

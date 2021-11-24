@@ -96,7 +96,7 @@ input:focus {
 .fa-search {
   cursor: pointer;
   color: var(--color-grey);
-  transition: 0.2s opacity;
+  transition: 0.2s;
   margin-right: 30px;
 }
 
