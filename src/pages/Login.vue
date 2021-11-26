@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div id="login" class="container">
+    <section id="login" class="container">
       <h2>Login</h2>
       <p>Usuário</p>
       <input type="text" />
@@ -14,7 +14,7 @@
       <a href="/">Esqueceu a senha?</a>
 
       <button class="button-white">Cadastra-se</button>
-    </div>
+    </section>
   </main>
 </template>
 
@@ -33,7 +33,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 45px 0;
 }
 
 h2 {
@@ -47,7 +46,7 @@ p {
 #login input {
   width: 100%;
   margin: 7px 0 15px 0;
-  height: 56px;
+  height: 40px;
   padding: 10px;
   border-radius: 7px;
   border: 1px solid black;
