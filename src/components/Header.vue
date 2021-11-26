@@ -48,6 +48,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 45px;
 }
 
 nav {
@@ -79,8 +80,8 @@ a {
   position: absolute;
   top: 75px;
   left: 0;
-  width: calc(100vw - 15px);
-  padding: 5px 0 5px 10px;
+  width: 100vw;
+  padding: 10px 0 10px 10px;
   border: none;
   border-bottom: 1px solid var(--color-grey);
 }

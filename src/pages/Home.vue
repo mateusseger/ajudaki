@@ -1,16 +1,16 @@
 <template>
   <main>
-    <div id="welcome" class="container">
+    <section id="welcome" class="container">
       <img src="@/assets/banner.jpeg" alt="banner" />
       <h2>
         Tempos difíceis podem ser superados quando somos solidários com o
         próximo. Peça ajuda ou ajude alguém.
       </h2>
-    </div>
+    </section>
 
     <button @click="$router.push('RequestHelp')">Pedir ajuda</button>
 
-    <div id="content" class="container">
+    <section id="content" class="container">
       <section
         class="request-section"
         v-for="(section, index) in sections"
@@ -30,7 +30,7 @@
         </div>
         <a href="/">Ver mais</a>
       </section>
-    </div>
+    </section>
   </main>
 </template>
 
@@ -98,7 +98,7 @@ export default {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  margin: 30px 0;
+  margin-bottom: 45px;
 }
 
 #welcome img {
