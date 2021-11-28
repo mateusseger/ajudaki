@@ -77,6 +77,7 @@
           </li>
 
         </ul>
+        <div class="aux"></div>
       </nav>
     </section>
 
@@ -142,6 +143,10 @@ input[type="email"] {
   padding: 10px;
   border-radius: 7px;
   border: 1px solid black;
+}
+
+.aux {
+  height: 650px;
 }
 
 @media (min-width: 700px) {

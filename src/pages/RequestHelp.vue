@@ -41,7 +41,7 @@
           </li>
           <li id="ways-to-help">
             <input type="radio" name="tab" class="tab" id="tab4" />
-            <label for="tab4">Meios</label>
+            <label for="tab4">Banco</label>
             <div class="content">
               <h4> Chave PIX:</h4>
               <input type="text" placeholder="Informe sua chave PIX">

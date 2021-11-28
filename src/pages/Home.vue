@@ -21,6 +21,7 @@
           class="request"
           v-for="(request, index) in section.requests"
           :key="index"
+          @click="$router.push('OfferHelp')"
         >
           <img src="@/assets/help-me.png" alt="help-me" />
           <div>
