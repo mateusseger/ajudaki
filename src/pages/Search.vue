@@ -142,6 +142,10 @@ p {
   justify-content: space-around;
 }
 
+#search {
+  max-width: 600px;
+}
+
   .request {
     flex-direction: column;
     width: 250px;
