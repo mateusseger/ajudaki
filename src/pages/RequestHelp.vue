@@ -133,4 +133,15 @@ textarea {
 button {
   margin-bottom: 15px;
 }
+
+@media(min-width: 700px) {
+  #request-help {
+    max-width: 600px;
+  }
+
+  .nav-tabs .content {
+    width: 600px;
+    left: calc(50% - 300px)
+  }
+}
 </style>

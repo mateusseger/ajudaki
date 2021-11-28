@@ -6,7 +6,7 @@
       <div class="carousel">
         <div class="slide fade">
           <div class="numbertext">1 / 3</div>
-          <img src="@/assets/slide1.jpg" style="width: 100%;" />
+          <img src="@/assets/slide1.jpg" style="width: 100%" />
         </div>
 
         <div class="slide fade">
@@ -107,7 +107,7 @@ export default {
   },
   methods: {
     plusSlides: function (n) {
-      this.showSlides(this.slideIndex += n);
+      this.showSlides((this.slideIndex += n));
     },
 
     currentSlide: function (n) {
@@ -206,7 +206,7 @@ h2 {
 
 .active,
 .dot:hover {
-  background-color: var(--color-grey);;
+  background-color: var(--color-grey);
 }
 
 .fade {
@@ -269,24 +269,33 @@ select {
   margin-bottom: 30px;
 }
 
-@media(min-width: 700px) {
+@media (min-width: 700px) {
   #offer-help {
     align-items: center;
   }
-  .carousel{
+  .carousel {
     max-width: 600px;
   }
   .nav-tabs {
     width: 100%;
-
+    display: flex;
+    justify-content: center;
   }
   .content {
-   max-width: 600px;
+    width: 600px;
+    left: calc(50% - 300px);
   }
 
   .button-pink {
-    align-self: flex-start;
+    width: 600px;
   }
 
+  .aux {
+    height: 370px;
+  }
+
+  p {
+    max-width: 600px;
+  }
 }
 </style>
