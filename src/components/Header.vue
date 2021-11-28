@@ -10,6 +10,7 @@
         id="search"
         :class="{ active: searchActive }"
         placeholder="Pesquisar"
+        @keyup.enter="$router.push('Search')"
       />
 
       <span v-on:click="openSearch"><i class="fas fa-search fa-lg"></i></span>
